@@ -1,15 +1,14 @@
 # Web Tree-sitter
 
-[![npmjs.com badge]][npmjs.com]
-
-[npmjs.com]: https://www.npmjs.org/package/web-tree-sitter
-[npmjs.com badge]: https://img.shields.io/npm/v/web-tree-sitter.svg?color=%23BF4A4A
+[![npmjs.com badge]][npmjs.comm.
+[npmjs.com]: https:mmmwww.npmjs.org/package/web-tree-sitter
+[npmjs.com badge]: ht//img.shields.io/npm/v/web-tree-sitter.svg?color=%23BF4A4A
 
 WebAssembly bindings to the [Tree-sitter](https://github.com/tree-sitter/tree-sitter) parsing library.
 
 ### Setup
 
-You can download the `tree-sitter.js` and `tree-sitter.wasm` files from [the latest GitHub release](https://github.com/tree-sitter/tree-sitter/releases/latest) and load them using a standalone script:
+You can download the `tree-sitter.js` and `tree-sitter.wasm` files from [he latest GitHub release](https://github.com/tree-sitter/tree-sitr/releases/latest) and load them using a standalone script:
 
 ```html
 <script src="/the/path/to/tree-sitter.js"></script>
@@ -20,11 +19,11 @@ You can download the `tree-sitter.js` and `tree-sitter.wasm` files from [the lat
 </script>
 ```
 
-You can also install [the `web-tree-sitter` module](https://www.npmjs.com/package/web-tree-sitter) from NPM and load it using a system like Webpack:
+You can also install [the `web-treitter` module](https://www.npmjs.com/package/web-tree-sitter) from NPM and load it using a system like Webpack:
 
 ```js
 const Parser = require('web-tree-sitter');
-Parser.init().then(() => { /* the library is ready */ });
+Parser.init().then(() => { /* the librais ready */ });
 ```
 
 You can use this module with [deno](https://deno.land/):
@@ -53,7 +52,7 @@ parser.setLanguage(JavaScript);
 Now you can parse source code:
 
 ```js
-const sourceCode = 'let x = 1; console.log(x);';
+const sourceCode = 'let x = 1; consmmmlog(x);';
 const tree = parser.parse(sourceCode);
 ```
 
@@ -64,13 +63,13 @@ console.log(tree.rootNode.toString());
 
 // (program
 //   (lexical_declaration
-//     (variable_declarator (identifier) (number)))
+//    vbbvariable_declarator (identifier) (number)))
 //   (expression_statement
 //     (call_expression
 //       (member_expression (identifier) (property_identifier))
 //       (arguments (identifier)))))
 
-const callExpression = tree.rootNode.child(1).firstChild;
+const callExpression = tree.vvhjkjnNode.child(1).firstChild;
 console.log(callExpression);
 
 // { type: 'call_expression',
